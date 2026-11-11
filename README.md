@@ -1,9 +1,11 @@
+Try again b/c messed up ownership and editing access permissions
+
 # Project Name
 
 > One sentence on what this project does and who it helps.
 
-**Team:** Name 1, Name 2, Name 3
-**Status:** Idea / Prototype / Testing / Done
+**Team:** Hugh, Yuzu, Ryan, Kaitlyn
+**Status:** Idea/First code test
 
 ## The problem
 
