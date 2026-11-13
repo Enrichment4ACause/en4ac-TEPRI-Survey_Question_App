@@ -20,13 +20,36 @@ class Database:
         self.df_Other = data
 
     def __add__(self, data):
+        
+        for i in range(len(data)):
+            
+            temp = data.at(i,"Category")
+            
+            if(temp == "Demographic"):
+                self.df_Demographic.add(temp.iloc[[i]])
+            
+            elif(temp == "Affordability"):
+                self.df_Affordability.add(temp.iloc[[i]])
+            
+            elif(temp == "Reliability"):
+                self.df_Reliability.add(temp.iloc[[i]])
+            
+            elif(temp == "Grid Flexibility"):
+                self.df_Grid_flexibility.add(temp.iloc[[i]])
+            
+            elif(temp == "Energy Efficency"):
+                self.df_Energy_efficency.add(temp.iloc[[i]])
+            else:
+                self.df_Other.add(temp.iloc[[i]])
+
+    def __remove__(self, id):
         pass
 
 #How search is implemented is not the most important. Just make sure it makes sense :)
-    def __search_by_Category__():
+    def __search_by_Category__(self):
         pass
 
-    def __search_by_in_category__():
+    def __search_by_in_category__(self, Category):
         pass
 
 data = pd.read_csv("test_data.csv")
